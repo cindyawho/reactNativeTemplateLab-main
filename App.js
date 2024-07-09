@@ -9,7 +9,7 @@ export default function App() {
       <View style={styles.imageContainer}>
         <Image source={PlaceholderImage} style={styles.image}/>
       </View>
-      <Text style={{ color: '#fff', fontSize: 30 }}>Malena is the best!</Text>
+      <Text style={{ color: '#fff', fontSize: 30 }}>Cindy is the best!</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -20,6 +20,14 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#008a65',
     alignItems: 'center',
-    justifyContent: 'center',
+  },
+  imageContainer: {
+    flex: 1,
+    paddingTop: 58,
+  },
+  image: {
+    width: 320,
+    height: 440,
+    borderRadius: 18,
   },
 });
