@@ -32,12 +32,15 @@ export default function App() {
           placeholderImageSource={PlaceholderImage}
           selectedImage={selectedImage}
         />
+        <Text style={{ color: '#fff', fontSize: 30, textAlign: 'center' }}>Cindy and Malena</Text>
       </View>
-      <View style={styles.footerContainer}>
-        <Button theme="primary" label="Choose a photo" onPress={pickImageAsync}/>
-        <Button label="Use this photo" />
+      <View>
+        <Text>About Us: ;ljanerh jaberu</Text>
       </View>
-      <Text style={{ color: '#fff', fontSize: 30 }}>Malena is the best!</Text>
+      <View>
+        <Text>About Us: ;ljanerh jaberu</Text>
+      </View>
+
       <StatusBar style="auto" />
     </View>
     
