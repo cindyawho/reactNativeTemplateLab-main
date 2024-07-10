@@ -1,17 +1,16 @@
 import { StyleSheet, View, Pressable, Text } from 'react-native';
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 
-export default function Button({ label, theme }) {
+export default function Button({ label, theme, onPress }) {
   if (theme === "primary") {
     return (
-      <a href="https://github.com/malena-3">
       <View style={[styles.buttonContainer, { borderWidth: 4, borderColor: "#ffd33d", borderRadius: 18 }]}>
         <Pressable
           style={[styles.button, { backgroundColor: "#fff" }]}
+          onPress={onPress}
         >
           <FontAwesome
-           name="picture-o"
-            
+            name="snapchat-ghost"
             size={10}
             color="#25292e"
             style={styles.buttonIcon}
@@ -19,7 +18,6 @@ export default function Button({ label, theme }) {
           <Text style={[styles.buttonLabel, { color: "#25292e" }]}>{label}</Text>
         </Pressable>
       </View>
-      </a>
     );
   }
 
