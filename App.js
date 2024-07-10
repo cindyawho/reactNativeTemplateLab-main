@@ -33,19 +33,23 @@ export default function App() {
           placeholderImageSource={PlaceholderImage}
           selectedImage={selectedImage}
         />
-      </View>
-      <View style={styles.imageContainer}>
+        <View style={styles.imageContainer}>
         <Text style={{ color: '#fff', fontSize: 30, textAlign: 'center', paddingBottom: 10 }}>Cindy and Malena</Text>
         
         <Text style={styles.titleText}>About Us:</Text> 
         <Text style={styles.descriptionText}>Hello! We are both Snap Engineering Scholars who love to read, playing with dogs and eating sweets!</Text>
 
-        <Text style={styles.titleText}>Malena: </Text>
+        <Text style={styles.titleText}>Malena: </Text> 
+      
+        <Button theme="primary" label="Snap"/>
+        
         <Text style={styles.descriptionText}>Malena is the sweetest most awesome scholar here! She had a cute project with a frog design and brightens the room!</Text>
 
         <Text style={styles.titleText}>Cindy: </Text>
         <Text style={styles.descriptionText}>Cindy is the best teacher around. She has a kind smile and is extremely welcoming. You can tell by her actions that she has a big heart and it's always a pleasure to be around her!</Text>
       </View>
+      </View>
+      
 
       <StatusBar style="auto" />
     </View>
